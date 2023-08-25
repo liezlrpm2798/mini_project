@@ -40,26 +40,21 @@ footer {
 
 /* MP1 navigation bar */
 
-.navbar-brand {
+.navbar-brandname {
   color: #4E97FD;
   font-size: 2rem;
   font-family: 'Lobster', cursive;
+  text-decoration: none;
+}
+.navbar-brandname:hover {
+  color: #4E97FD;
 }
 
-.navbar-brand:hover {
-  color: #0ED3B0;
-
-}
 
 .nav-link {
   margin-left: 10px;
   margin-right: 10px;
-  color: black;
   text-transform: uppercase;
-}
-
-.nav-link:hover {
-  color: #0ED3B0;
 }
 
 .button:hover {
@@ -71,8 +66,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
   text-align: center;
 }
 
@@ -82,7 +75,6 @@ li {
 
 li a {
   display: block;
-  color: #666;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -111,6 +103,7 @@ li a.active {
   background-color: white;
   height: 65vh;
   display: flex;
+
 }
 
 .row-3 {
@@ -127,6 +120,10 @@ li a.active {
   color: whitesmoke;
   text-align: center;
   padding: 50px;
+  width: 25%; 
+  height:39vh;
+  margin: auto; 
+  margin-top:4%
 }
 
 /* MP1 Appointment/Contact Form */
@@ -138,7 +135,7 @@ li a.active {
 .app-form {
   color: black;
   padding: 100px;
-  width: 50%;
+
 }
 
 input[type=text] {
@@ -169,9 +166,7 @@ input[type=submit] {
   background-color: 	#4E97FD; 
   color: white; 
   padding: 30px;
-  width: 50%;
   margin-top: 100px;
-  height: 70%;
 }
 
 .app-form h3 {
@@ -395,4 +390,34 @@ body{margin-top:20px;}
     margin-bottom: 1rem;
     font-size: 3.125rem;
     letter-spacing: -1px;
+}
+
+ul{
+  background-color: white ;border: none ;
+}
+
+@media (max-width: 800px) {
+  .row-2 {
+    flex-direction: column;
+    width: auto;
+    background-color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .cell {
+    margin: auto;
+    background-color: #4E97FD;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top:20px;
+    margin-left:5px;
+    margin-right:5px;
+
+  }
+  
+
 }
