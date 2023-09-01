@@ -18,10 +18,10 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+/* button:hover {
   background-color: #0ED3B0;
   color: whitesmoke;
-}
+} */
 
 footer {
   padding: 10px;
@@ -29,14 +29,34 @@ footer {
   color: white;
   text-align: center;
   font-size: 16px;
-  margin-top: 30px;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 2000px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    margin-top: 1800px;
+  }
+}
+
+@media only screen and (max-width: 500) {
+  footer {
+    margin-top: 800px;
+  }
 }
 
 .container {
   height: 80vh;
   margin-top: 10%;
 }
+
+
+
 
 /* MP1 navigation bar */
 
@@ -46,9 +66,9 @@ footer {
   font-family: 'Lobster', cursive;
   text-decoration: none;
 }
-.navbar-brandname:hover {
+/* .navbar-brandname:hover {
   color: #4E97FD;
-}
+} */
 
 
 .nav-link {
@@ -57,9 +77,13 @@ footer {
   text-transform: uppercase;
 }
 
-.button:hover {
+/* .nav-link > a:hover{
+ color: white;
+} */
+
+/* .button:hover {
   color: #4E97FD;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -88,6 +112,10 @@ li a.active {
   color: white;
   background-color: #FCBAAD;
 }
+
+
+
+
 
 /* MP1 Main */
 
@@ -126,16 +154,20 @@ li a.active {
   margin-top:4%
 }
 
+
+
+
+
 /* MP1 Appointment/Contact Form */
 
 .column {
   display: flex;
+  flex-direction: row;
 }
 
 .app-form {
   color: black;
   padding: 100px;
-
 }
 
 input[type=text] {
@@ -167,6 +199,9 @@ input[type=submit] {
   color: white; 
   padding: 30px;
   margin-top: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-bottom: 150px;
 }
 
 .app-form h3 {
@@ -174,6 +209,10 @@ input[type=submit] {
   font-weight: normal;
   text-align: center;
 }
+
+
+
+
 
 /* MP1 FAQ */
 
@@ -189,6 +228,10 @@ input[type=submit] {
 h6 {
   background-color: aliceblue;
 }
+
+
+
+
 
 /* MP1 Services */
 
@@ -269,8 +312,32 @@ body{margin-top:20px;}
   left: 0;
   right: auto;
 }
+
+@media (max-width: 500px) {
+
+  .feature-box-1:hover {
+    top: 0px;
+    color: black;
+  }
+  .feature-box-1:hover h5 {
+    color: #4E97FD;;
+  }
+  .feature-box-1:hover p {
+    color: black;
+  }
+  .feature-box-1:hover:after {
+    width: 0%;
+    height: 0%;
+    border-radius: 0px;
+    left: 0;
+    right: 0;
+  }
+  
+}
+
+
 .section {
-    padding: 100px 0;
+    padding: 10px 0;
     position: relative;
 }
 .section-title {
@@ -310,11 +377,13 @@ h1 {
 }
 
 
+
 /* MP1 Team */
 
 
 .whos-speaking-area .speakers .spk-img {
   position: relative;
+  margin-bottom: 10px;
 }
 .whos-speaking-area .speakers .spk-img:before {
   background: rgba(91, 69, 213, 0.8);
@@ -396,6 +465,9 @@ ul{
   background-color: white ;border: none ;
 }
 
+
+
+
 @media (max-width: 800px) {
   .row-2 {
     flex-direction: column;
@@ -404,6 +476,12 @@ ul{
     height: auto;
     display: flex;
     align-items: center;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .side{
+    margin-left: 15px;
   }
   .cell {
     margin: auto;
@@ -418,6 +496,4 @@ ul{
     margin-right:5px;
 
   }
-  
-
 }
